@@ -1,7 +1,7 @@
 {
-  "name": "poa-network-sokol-faucet",
+  "name": "ewf-volta-faucet",
   "version": "1.0.1",
-  "description": "Sokol tetnet POA Network faucet",
+  "description": "EWF Volta testnet faucet",
   "main": "index.js",
   "scripts": {
     "start": "npm run sass && npm run coffee && node index.js",
@@ -11,9 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git.heroku.com/faucet-sokol.git"
+    "url": "https://github.com/energywebfoundation/volta-faucet"
   },
-  "author": "poanetwork",
+  "author": "EnergyWeb",
   "license": "MIT",
   "dependencies": {
     "body-parser": "1.18.3",

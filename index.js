@@ -31,13 +31,13 @@ app.configureWeb3(config)
 	require('./src/controllers/index')(app)
 
 	app.get('/', function(request, response) {
-	  response.send('Sokol POA Network faucet')
+	  response.send('EWF Volta testnet faucet')
 	});
 
 	app.set('port', (process.env.PORT || 5000))
 
 	app.listen(app.get('port'), function () {
-	    console.log('Sokol testnet POA Network faucet is running on port', app.get('port'))
+	    console.log('EWF Volta testnet faucet is running on port', app.get('port'))
 	})
 })
 .catch(error => {

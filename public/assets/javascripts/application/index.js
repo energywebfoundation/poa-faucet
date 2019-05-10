@@ -22,7 +22,7 @@ $(function() {
 			$("#receiver").val('');
 			loader.addClass("hidden");
 			swal("Success",
-			  `0.5 SPOA has been successfully transferred to <a href="https://blockscout.com/poa/sokol/tx/${data.success.txHash}" target="blank">${receiver}</a>`,
+			  `1 Volta Ether has been successfully transferred to <a href="http://explorer.energyweb.org/tx/${data.success.txHash}" target="blank">${receiver}</a>`,
 			  "success"
 			);
 		}).fail(function(err) {

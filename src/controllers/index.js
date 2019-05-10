@@ -34,7 +34,7 @@ module.exports = function (app) {
 		}
 		const receiver = request.body.receiver
 		if (await validateCaptchaResponse(captchaResponse, receiver, response)) {
-			await sendPOAToRecipient(web3, receiver, response, isDebug)
+			await sendTokensToRecipient(web3, receiver, response, isDebug)
 		}
 	});
 
@@ -66,7 +66,7 @@ module.exports = function (app) {
 		return true
 	}
 
-	async function sendPOAToRecipient(web3, receiver, response, isDebug) {
+	async function sendTokensToRecipient(web3, receiver, response, isDebug) {
 		let senderPrivateKey = config.Ethereum[config.environment].privateKey
 		const privateKeyHex = Buffer.from(senderPrivateKey, 'hex')
 		if (!web3.utils.isAddress(receiver)) {
