@@ -22,7 +22,7 @@ $(function() {
 			$("#receiver").val('');
 			loader.addClass("hidden");
 			swal("Success",
-			  `1 Volta Ether has been successfully transferred to <a href="http://explorer.energyweb.org/tx/${data.success.txHash}" target="blank">${receiver}</a>`,
+			  `1 Volta Ether has been successfully transferred to <a href="${data.success.explorerTxUrl}/${data.success.txHash}" target="blank">${receiver}</a>`,
 			  "success"
 			);
 		}).fail(function(err) {
